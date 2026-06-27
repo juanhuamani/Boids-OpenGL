@@ -1,0 +1,41 @@
+Boids
+En 1986 Craig Reynolds propuso el modelo Boids para simular el movimiento colectivo de aves. La idea
+principal consiste en que cada agente toma decisiones únicamente a partir de la información de sus vecinos
+cercanos.
+
+Implementación (Indicaciones)
+
+1. Implementar una estructura que represente un Boid. Cada agente debe almacenar como mínimo: Po-
+sición, Velocidad y Dirección.
+
+2. Inicializar una población de al menos 50 Boids distribuidos aleatoriamente dentro de la ventana. Cada
+Boid deberá poseer una dirección inicial aleatoria.
+3. Representar visualmente cada Boid mediante una figura simple 2D/3D. La orientación visual debe
+coincidir con la dirección de movimiento.
+
+1
+
+4. Implementar movimiento continuo.
+Cada Boid deberá actualizar su posición en cada cuadro utilizando su velocidad actual.
+Implementar la regla de Separación.
+Cada Boid debe evitar colisiones con los vecinos cercanos. Cuando dos agentes estén demasiado
+próximos, deberán generar una fuerza de repulsión.
+Implementar la regla de Alineamiento.
+Cada Boid deberá intentar igualar su dirección con la dirección promedio de sus vecinos.
+Implementar la regla de Cohesión.
+Cada Boid deberá desplazarse hacia el centro de masa de los vecinos cercanos.
+5. Combinar las tres reglas para generar el comportamiento colectivo.
+La contribución de cada regla deberá poder ajustarse mediante constantes de ponderación.
+6. Implementar límites de velocidad.
+Cada Boid deberá mantener:
+Velocidad mínima.
+Velocidad máxima.
+7. Implementar comportamiento en los bordes de la ventana.
+Rebote contra los límites.
+Mundo toroidal (salir por un lado y aparecer por el opuesto).
+8. Permitir modificar en tiempo real:
+Número de Boids.
+Distancia de vecindad.
+Intensidad de separación.
+Intensidad de alineamiento.
+Intensidad de cohesión.

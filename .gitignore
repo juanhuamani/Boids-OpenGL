@@ -1,0 +1,5 @@
+obj/
+proyecto_opengl
+*.o
+.antigravity/
+.gemini/
